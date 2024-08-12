@@ -1,0 +1,54 @@
+/* universal styles */
+.text-1{
+    color: aliceblue;
+}
+.text-2{
+    color: rgba(255, 255, 255, .5);
+}
+
+.text-primary{
+    color: #E6533C;
+}
+.primary-button{
+    background-color: #E6533C;
+    border-radius: 39px;
+}
+
+.display-flex{
+    display: flex;
+}
+
+/* navbar styles */
+.navbar{
+   
+}
+.nav-links{
+    border: 1px solid rgba(207, 23, 23, 0.747) ;
+    border-radius: 39px;
+    align-items: center;
+}
+.nav-link{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 47px;
+    
+}
+/* fitness homepage style */
+.fitness{
+    background-color: black;
+    background-image: linear-gradient(45deg, #111111,#777777);
+    padding: 57px 190px;
+    
+}
+.card-2,.card-1{
+    border: 1px solid rgba(255, 255, 255, 0.308);
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 193px;
+    height: auto;
+}
+.car
