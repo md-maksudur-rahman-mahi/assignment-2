@@ -26,6 +26,10 @@ body{
     font-size: 48px;
     color: white;
 }
+.title-2{
+    font-size: 34px;
+    color: white;
+}
 .text-primary{
     color: #E6533C;
     font-size: 18px;
@@ -183,4 +187,74 @@ margin-top: 30PX;
     border-radius: 18px;
     width: 350px;
     height: 200px;
+}
+/* bmi calculator styles */
+.bmi-content
+{
+    justify-content: space-around;
+}
+.bmi-heading{
+    text-align: center;
+    margin: 88px;
+}
+.bmi-content{
+    background-color: #222222;
+    padding: 10px;
+}
+table, th, td{
+   border: 1px solid gray;
+   padding: 15px;
+}
+table{
+    border-collapse: collapse;
+    /* width: 40%; */
+    text-align: center;
+    row-gap: 10px;
+}
+.bmi-calculator{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+/* trainer styles */
+.trainer1{
+    background-image: url(images/trainer1.png);
+}
+.trainer2{
+    background-image: url(images/trainer2.png);
+}
+.trainer3{
+    background-image: url(images/trainer3.png);
+}
+.trainer4{
+    background-image: url(images/trainer4.png);
+}
+.trainer5{
+    background-image: url(images/trainer5.png);
+}
+.trainer6{
+    background-image: url(images/trainer6.png);
+}
+.trainer1,.trainer2,.trainer3,.trainer4,.trainer5,.trainer6{
+    border-radius: 18px;
+    width: 325px;
+    height: 270px;
+    
+}
+/* footer design */
+footer > div > ul >li{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+#footer-brand{
+    color: #E6533C;
+    font-size: 70px;
+    font-weight: bold;
+    font-style: italic;
+}
+#footer-end{
+    font-size: 20px;
+    color:rgba(255, 255, 255, 0.5) ;
+}
+br{
+    color: aqua;
 }
