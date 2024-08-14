@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 /* font styles */
 
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Grey+Qo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
@@ -191,7 +195,7 @@ margin-top: 30PX;
 /* bmi calculator styles */
 .bmi-content
 {
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .bmi-heading{
     text-align: center;
@@ -199,7 +203,7 @@ margin-top: 30PX;
 }
 .bmi-content{
     background-color: #222222;
-    padding: 10px;
+    /* padding: 10px; */
 }
 table, th, td{
    border: 1px solid gray;
@@ -207,15 +211,30 @@ table, th, td{
 }
 table{
     border-collapse: collapse;
-    /* width: 40%; */
+    
     text-align: center;
-    row-gap: 10px;
-}
+}  
 .bmi-calculator{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    column-span: 3,1;
+    
 }
 /* trainer styles */
+.team-heading{
+    text-align: center;
+    margin-top: 80px;
+}
+.trainers{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  border-radius: 18px;
+    background-color: #222222;
+    padding: 20px;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-items: center;
+}
 .trainer1{
     background-image: url(images/trainer1.png);
 }
@@ -236,25 +255,49 @@ table{
 }
 .trainer1,.trainer2,.trainer3,.trainer4,.trainer5,.trainer6{
     border-radius: 18px;
-    width: 325px;
-    height: 270px;
-    
+    width: 480px;
+    height: 400px;
+    object-fit: scale-down;
 }
 /* footer design */
-footer > div > ul >li{
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.5);
+.footer{
+    background-color: #222222;
+    padding: 66px 190px;
 }
-#footer-brand{
+.footer-content{
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.footer-list >li{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+.footer-brand{
+   width: 443px; 
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+}
+#footer-brand-name{
     color: #E6533C;
     font-size: 70px;
     font-weight: bold;
     font-style: italic;
 }
 #footer-end{
+    margin-top: 30px;
     font-size: 20px;
     color:rgba(255, 255, 255, 0.5) ;
+    text-align: center;
+}
+.footer-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 }
 br{
+    margin-top: 50px;
     color: aqua;
 }
