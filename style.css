@@ -57,7 +57,7 @@ body{
     font-size: 36px;
 }
 .shape{
-    font-size: 80px;
+    /* font-size: 80px; */
 }
 .navbar{
    justify-content: space-between;
@@ -346,3 +346,88 @@ br{
     margin-top: 50px;
     color: aqua;
 }
+
+/*  responsive styles fir phone */
+
+@media screen and (max-width:576px){
+
+    /* ubiversal design */
+
+            /* flex direction */
+    .fitness-content,.habit-cards,.run,.equip-descrip,.bmi-content{  
+        flex-direction: column;
+        align-items: center;
+        }
+            /* margin */
+        .habit-content, .run, .equipments,.bmi,.bmi-chart{
+            margin: 20px 20px;
+    
+        }
+    /* navbar and homepage */
+    .fitness{
+        padding: 50px 0px 20px 20px;
+    }
+    .fitness-body{
+        padding-right: 0px;
+        align-items: center;
+        justify-content: center;
+            }
+    
+    .fitness-btn{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .fitness-btn-1,.fitness-btn-2{
+        height: max-content;
+    }
+    .nav-links{
+        display: none;
+        <i class="fa-solid fa-bars"></i>
+    }
+    .fitness-title,.shape{
+        font-size: 36px;
+    }
+    .fitness-pic > img{
+        margin-left: 100px;
+    }
+    .card-2{
+        left: 0;
+    }
+    /* habits */
+   
+    .habit-discription{
+        padding: 20px;
+    }
+    .habit-cards, .habit-card{
+        gap: 40px ;
+    }
+/* run miles */
+    .run-content{
+    padding: 0;
+    }
+    .run-content > .primary-button{
+        
+    }
+    #run-img{
+       width: 100%;
+       margin-top: 50px;
+    }
+/* bmi calculator */
+    .bmi-content{
+        
+        /* gap: 50px; */
+    }
+    .bmi-calculator-container{
+        width: 100%;
+    }
+    .bmi-calculator{
+        /* width: 100px; */
+    }
+    .input, .select{
+        
+      
+        width: 100%;
+       
+    }
+} 
