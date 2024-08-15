@@ -1,11 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;font styles
 }
-/* font styles */
-
-@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Grey+Qo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 
 /* universal styles */
 body{
@@ -29,10 +26,12 @@ body{
 .title{
     font-size: 48px;
     color: white;
+    margin-bottom: 30px;
 }
 .title-2{
     font-size: 34px;
     color: white;
+    margin-bottom: 20px;
 }
 .text-primary{
     color: #E6533C;
@@ -53,9 +52,12 @@ body{
     display: flex;
 }
 
-/* navbar styles */
+/* navbar styles *//* fitness homepage style */
 .brand{
     font-size: 36px;
+}
+.shape{
+    font-size: 80px;
 }
 .navbar{
    justify-content: space-between;
@@ -65,9 +67,10 @@ body{
     border-radius: 39px;
     align-items: center;
     font size: 18px;
-    padding: 0;
+    padding: 2px;
    
 }
+
 .nav-link{
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
@@ -78,18 +81,31 @@ body{
     margin-right: 47px;
     
 }
-/* fitness homepage style */
+
 .fitness{
     background-color: black;
     background-image: linear-gradient(45deg, #111111,#777777);
-    padding: 57px 190px;
+    padding: 57px 190px 0 190px;
     
 }
-.fitness-body{
-    gap:28px;
-}
 .fitness-content{
+    margin-top: 100px;
     justify-content: space-between;
+}
+.fitness-body{
+    padding-right: 650px;
+    /* width: 100%; */
+      
+}
+.fitness-descrip{
+    flex-direction: column;
+    gap: 50px;
+}
+.fitness-pic{
+    margin-right: 50px;
+}
+.fitness-body{
+    /* gap:28px; */
 }
 .fitness-title{
     font-size: 78px;
@@ -104,21 +120,30 @@ body{
     background-color: transparent;
     
 }
+.fitness-pic{
+    position: relative;
+}
 .card-2,.card-1{
-    border: 1px solid rgba(255, 255, 255, 0.308);
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 12px;
     background-color: rgba(255, 255, 255, 0.1);
-    /* width: 193px; */
-    
-}
+    position: absolute;
+    width: 206px;
+    height: 96px;
+}  
 .card-1{
-        margin-left: 250px;
-        margin-top: -500px;
+    left: 60%;
+    bottom: 60%;
+
 }
 .card-2{
-    margin-right: 350px;
-    margin-top: -200px;
+    left: -20%;
+    bottom: 30%;
+
 }
+
+
 /* habit related styles */
 .habit-content{
     background-color: black;
@@ -187,6 +212,11 @@ margin-top: 30PX;
     margin-top: 20px;
     align-items: center;
 }
+.equip-descrip > .display-flex{
+    flex-direction: column;
+    gap: 20px;
+}
+
 .equipment-img{
     border-radius: 18px;
     width: 350px;
@@ -196,18 +226,21 @@ margin-top: 30PX;
 .bmi-content
 {
     justify-content: space-between;
+    background-color: #222222;
+}
+.bmi-calculator-container{
+    flex-direction: column;
+    gap: 20px;
 }
 .bmi-heading{
     text-align: center;
     margin: 88px;
 }
-.bmi-content{
-    background-color: #222222;
-    /* padding: 10px; */
-}
 table, th, td{
    border: 1px solid gray;
    padding: 15px;
+   width: auto;
+   
 }
 table{
     border-collapse: collapse;
@@ -216,10 +249,28 @@ table{
 }  
 .bmi-calculator{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    column-span: 3,1;
-    
+    grid-template-columns: repeat(2,1fr); 
+    column-gap: 10px;
+    row-gap: 10px;
 }
+.factor{
+    grid-column: 1/span 2; 
+}
+.input, .select{
+    border: none;
+    border-radius: 8px;
+    background-color:#777777;
+    padding: 10px;
+    width: 320px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.select{
+    width: auto;
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+}
+
 /* trainer styles */
 .team-heading{
     text-align: center;
@@ -231,34 +282,28 @@ table{
   border-radius: 18px;
     background-color: #222222;
     padding: 20px;
-    row-gap: 20px;
-    column-gap: 20px;
-    justify-items: center;
+    gap: 20px;
+
 }
-.trainer1{
-    background-image: url(images/trainer1.png);
+.trainer{
+    position: relative;
 }
-.trainer2{
-    background-image: url(images/trainer2.png);
-}
-.trainer3{
-    background-image: url(images/trainer3.png);
-}
-.trainer4{
-    background-image: url(images/trainer4.png);
-}
-.trainer5{
-    background-image: url(images/trainer5.png);
-}
-.trainer6{
-    background-image: url(images/trainer6.png);
-}
-.trainer1,.trainer2,.trainer3,.trainer4,.trainer5,.trainer6{
+.trainers > .trainer > img {
+    width: 100%;
     border-radius: 18px;
-    width: 480px;
     height: 400px;
-    object-fit: scale-down;
 }
+
+.trainer-name{
+   position: absolute;
+   left: 20px;
+   bottom: 20px;
+ 
+}
+.trainer-name > .text-1{
+    font-weight: bold;
+}
+
 /* footer design */
 .footer{
     background-color: #222222;

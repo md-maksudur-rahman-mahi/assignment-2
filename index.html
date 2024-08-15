@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>assignment-2</title>
     <link rel="stylesheet" href="style.css">
+           
 </head>
 <body>
     <header class="fitness">
@@ -19,16 +20,21 @@
         </nav>        
             <div class="fitness-content display-flex">
                 <div class="fitness-body">
-                    <h2 class="text-1 fitness-title">Get body in <span class="shape">shape</span> & stay healthy</h2>
-                    <p class="text-2">A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
+                   <div class="fitness-descrip display-flex">
+                    <h2 class="text-1 fitness-title">Get body in <span style=" font-family: 'Miama Nueva', sans-serif; font-size: 100px;" class="shape">shape</span> & stay healthy</h2>
+                    <p class="text-2 fitness-subtitle">A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
+                   
+                   <div class="fitness-btn">
                     <button class="primary-button fitness-btn-1">Join Club Now</button>
                     <button class="primary-button fitness-btn-2">Download App</button>
-                    
+                   </div>
+                </div>  
                 </div>
                 <div class="fitness-pic">
                     <img src="images/Images 2.png" alt="">
                     <button class="card-1">
-                        <h4 class="text-1">500+</h4>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <h4  class="text-1">500+</h4>
                         <p class="text-2">Free Workout Videos</p>
                     </button>
                     <button class="card-2">
@@ -89,11 +95,11 @@
 
          <!-- UNIQUE: equipments -->
          <div  class="equipments margin">
-            <div class="equip-heading"><h1 class="title">Why Web Development??</h1>
-            <p class="text-2">Web development is a dynamic and essential field with numerous benefits. Let’s explore why it matters</p>
+            <div class="equip-heading"><h1 class="title">Gym Equipments</h1>
+            <p class="text-2">Equipments are the dynamic and essential components with numerous benefits. Let’s explore why it matters</p>
             </div>
             <div class="equip-descrip display-flex">
-                <div>
+                <div class="display-flex">
                     <h2 class="title">Dumbbells</h2>
                     <p class="text-1"> Versatile free weights for various exercises.</p>
                     <button class="primary-button">learn more</button>
@@ -102,7 +108,7 @@
             </div>
             <div class="equip-descrip display-flex">
                     <div><img class="equipment-img" src="images/equipment1.jpg" alt=""></div>
-                    <div>
+                    <div class="display-flex">
                     <h2 class="title">Treadmill</h2>
                     <p class="text-1">Great for running or walking indoors.</p>
                     <button class="primary-button">learn more</button>
@@ -110,7 +116,7 @@
                 
             </div>
             <div class="equip-descrip display-flex">
-                    <div>
+                    <div class="display-flex">
                         <h2 class="title">Chest Press Machine</h2>
                     <p class="text-1">Focuses on the chest muscles.</p>
                     <button class="primary-button">learn more</button>
@@ -154,18 +160,18 @@
                     </table>
                 </div>
             </div>
-                    <div class="bmi-calculator-container margin">
+                    <div class="bmi-calculator-container margin display-flex">
                         <h2 class="title-2">Calculate your BMI</h2>
                         <p class="text-3">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
                         <div class="bmi-calculator">
-                            <input type="text" name="" id="" placeholder="Weight/kg">
-                            <input type="text" name="" id="" placeholder="Weight/kg">
-                            <input type="text" name="" id="" placeholder="Weight/kg">
-                            <select name="" id="">
+                            <input type="text"  class="input" placeholder="height/cm">
+                            <input type="text" name="" class="input" placeholder="Weight/kg">
+                            <input type="text" name="" class="input" placeholder="Age">
+                            <select name="" class="select">
                                 <option value="">sex</option>
                             </select>
-                            <select name="" id="">
-                                <option class="text-3" value="">Select an activity factor</option>
+                            <select name="" class="select factor">
+                                <option class="text-3 " value="">Select an activity factor</option>
                             </select>
                         </div>
                         <button class="primary-button">Calculate</button> 
@@ -181,29 +187,47 @@
         <p style="padding:0 700px; margin-top:20px;" class="text-3">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
      </div>
       <div class="trainers margin">
-        <div class="trainer1">
-            <t4 class="text-1">Jerome Bell</t4>
+        <div class="trainer">
+            <img src="images/trainer1.png"  alt="">
+            <div class="trainer-name">
+                <t4 class="text-1">Jerome Bell</t4>
             <p class="text-3">Trainer</p>
+            </div>
           </div>
-          <div class="trainer2">
+          <div class="trainer">
+            <img src="images/trainer2.png" alt="">
+           <div class="trainer-name">
             <t4 class="text-1">Cameron Williamson</t4>
             <p class="text-3">Trainer</p>
+           </div>
           </div>
-          <div class="trainer3">
+          <div class="trainer">
+            <img src="images/trainer3.png" alt="">
+           <div class="trainer-name">
             <t4 class="text-1">Darrell Steward</t4>
             <p class="text-3">Trainer</p>
+           </div>
           </div>
-          <div class="trainer4">
-            <t4 class="text-1">Dianne Russell</t4>
+          <div class="trainer">
+            <img src="images/trainer4.png" alt="">
+            <div class="trainer-name">
+                <t4 class="text-1">Dianne Russell</t4>
             <p class="text-3">Trainer</p>
+            </div>
           </div>
-          <div class="trainer5">
+          <div class="trainer">
+            <img src="images/trainer5.png" alt="">
+           <div class="trainer-name">
             <t4 class="text-1">Cody Fisher </t4>
             <p class="text-3">Trainer</p>
+           </div>
           </div>
-          <div class="trainer6">
-            <t4 class="text-1">Theresa Webb</t4>
+          <div class="trainer">
+            <img src="images/trainer6.png" alt="">
+            <div class="trainer-name">
+                <t4 class="text-1">Theresa Webb</t4>
             <p class="text-3">Trainer</p>
+            </div>
           </div>
       </div>
     </main>
