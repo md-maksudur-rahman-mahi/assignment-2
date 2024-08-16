@@ -16,6 +16,8 @@ body{
 .text-1{
     color: white;
     font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 .text-2{
     color: rgba(255, 255, 255, .5);
@@ -29,11 +31,13 @@ body{
     font-size: 48px;
     color: white;
     margin-bottom: 30px;
+    font-weight: bold;
 }
 .title-2{
     font-size: 34px;
     color: white;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 .text-primary{
     color: #E6533C;
@@ -142,7 +146,18 @@ body{
 .card-2{
     left: -20%;
     bottom: 30%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content:center ;
 
+}
+.icon{
+    background-color: #E6533C;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    
 }
 
 
@@ -370,6 +385,9 @@ br{
     
         }
     /* navbar and homepage */
+    .navbar{
+        justify-content: space-between;
+    }
     .fitness{
         padding: 50px 0px 20px 20px;
     }
@@ -378,12 +396,14 @@ br{
         flex-direction: column;
         width: 100%;
     }
+    .fitness-title,.fitness-subtitle{
+        padding-right: 200px;
+    }
     .fitness-body{
         padding-right: 0px;
         align-items: center;
         justify-content: center;
             }
-    
     .fitness-btn{
         display: flex;
         flex-direction: row;
