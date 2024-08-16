@@ -1,8 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;font styles
+    font-family: 'Inter', sans-serif;
 }
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Grey+Qo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
 
 /* universal styles */
 body{
@@ -56,8 +58,8 @@ body{
 .brand{
     font-size: 36px;
 }
-.shape{
-    /* font-size: 80px; */
+#shape{
+    font-family: 'Miama', sans-serif;
 }
 .navbar{
    justify-content: space-between;
@@ -276,6 +278,10 @@ table{
     text-align: center;
     margin-top: 80px;
 }
+.team-subtitle{
+    padding:0 700px;
+     margin-top:20px;
+}
 .trainers{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -354,18 +360,23 @@ br{
     /* ubiversal design */
 
             /* flex direction */
-    .fitness-content,.habit-cards,.run,.equip-descrip,.bmi-content{  
+            .habit-cards,.run,.equip-descrip,.bmi-content,.team{  
         flex-direction: column;
         align-items: center;
         }
             /* margin */
-        .habit-content, .run, .equipments,.bmi,.bmi-chart{
+        .habit-content, .run, .equipments,.bmi,.bmi-chart,.team,.trainers,.footer-content{
             margin: 20px 20px;
     
         }
     /* navbar and homepage */
     .fitness{
         padding: 50px 0px 20px 20px;
+    }
+    .fitness-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
     .fitness-body{
         padding-right: 0px;
@@ -388,11 +399,18 @@ br{
     .fitness-title,.shape{
         font-size: 36px;
     }
+    .fitness-pic{
+        display: flex;
+    }
     .fitness-pic > img{
-        margin-left: 100px;
+        display: flex;
+        margin: 10px auto 0;
     }
     .card-2{
         left: 0;
+    }
+    .card-1{
+        width: max-content;
     }
     /* habits */
    
@@ -413,21 +431,51 @@ br{
        width: 100%;
        margin-top: 50px;
     }
+/*equipments  */
+.equipment-img{
+    width: 300px;
+    height: 200px;
+    margin-top: 20px;
+}
+.equip-name{
+    align-items: center;
+    justify-content: center;
+}
+
 /* bmi calculator */
-    .bmi-content{
-        
-        /* gap: 50px; */
-    }
+
     .bmi-calculator-container{
-        width: 100%;
+        padding-left: 30px;
+        width: 80%;
     }
-    .bmi-calculator{
-        /* width: 100px; */
+    .select{
+        width: 88%;
     }
-    .input, .select{
-        
-      
-        width: 100%;
-       
+    .input{
+        width: 78%;
+       }
+    .factor{
+        width: 94%;
+       }
+/* team */
+       .team{
+        display: flex;
+       }
+       .team-subtitle{
+        padding: 0;
+       }
+       .trainers{
+        grid-template-columns: repeat(1,1fr);
+       }
+/* footer */
+       .footer{
+        padding: 0;
+       }
+    .footer-content{
+    flex-direction: column;
+    gap: 20px;
+    }
+    #footer-end{
+        padding-bottom: 30px;
     }
 } 
